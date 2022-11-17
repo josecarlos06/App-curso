@@ -143,5 +143,5 @@ dist
 
 # ignorando script de front-end
 bundle.js
-
+.vscode
 # End of https://www.toptal.com/developers/gitignore/api/node
