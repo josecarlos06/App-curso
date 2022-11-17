@@ -28,44 +28,16 @@ h1,h2,h3,p,ul,li,a{
   list-style: none;
 }
 .main__contenedor{
-  margin-top:15rem;
+  margin-top:8rem;
 }
-.heading{
-  text-align:left;
+.owl__item{
+  height:30rem;
 }
-.header__home{
-  max-width:40rem;
-  margin: 2rem auto;
-  box-shadow:0px 0px 22px 2px gray;
-  padding:2rem;
-  border-radius:.5rem;
-}
-.cta__bton{
-  display: inline-block;
-  margin-top:2rem;
-  background:var(--firstBg);
-  color:var(--blanco);
-  padding:1rem;
-  border-radius:.5rem;
-  position: relative;
-}
-.cta__bton::before{
-  content: "";
-  position: absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  opacity: .3;
-  background:#c0cad2;
-  clip-path: circle(0.5% at 0 0);
-  transition:clip-path 1s;
-  border-radius:.5rem;
-}
-.cta__bton:hover::before{
-  clip-path: circle(150% at 50% 50%);
-}
-.text-bold{
-  font-weight: bold;
-  font-size:1.4rem;
+@media(min-width:768px){
+  .owl__item{
+    height:40rem;
+  }
+  .main__contenedor{
+    margin-top:7.3rem;
+  }
 }

@@ -30,6 +30,7 @@
     "materialize-css": "^1.0.0-rc.2",
     "mongoose": "^6.0.5",
     "morgan": "~1.9.1",
+    "owl.carousel": "^2.3.4",
     "rimraf": "^3.0.2",
     "webpack": "^5.35.0",
     "webpack-dev-middleware": "^4.2.0",
