@@ -6,4 +6,8 @@ const recovery = (req, res) => {
   res.send('recovery acount its working!');
 };
 
-export default { loggin, recovery };
+const recoveryPut = (req, res) => {
+  res.send(' logica de recuperacion de cuenta!');
+};
+
+export default { loggin, recovery, recoveryPut };

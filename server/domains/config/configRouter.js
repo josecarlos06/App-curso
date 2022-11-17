@@ -6,6 +6,9 @@ const router = new Router();
 // enrutamos
 // GET
 router.get('/publications', configController.publications);
-router.get(['/account', '/cuenta'], configController.acount);
+router.get(
+  ['/account', '/cuenta', '/profile', '/user'],
+  configController.acount
+);
 
 export default router;

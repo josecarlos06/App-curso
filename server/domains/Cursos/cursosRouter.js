@@ -5,5 +5,12 @@ const router = new Router();
 
 // enrutamos
 // GET
-router.get(['/', '/Publicaciones'], cursosController.index);
+router.get(['/', '/Dashboard'], cursosController.index);
+router.get(['/edit', 'editar'], cursosController.editCurso);
+router.get(['/new', '/nuevo'], cursosController.createCurso);
+
+// POST
+router.post(['/new', '/nuevo'], cursosController.subirCurso);
+// DELETE
+router.delete('/:id', cursosController.eliminandoCurso);
 export default router;

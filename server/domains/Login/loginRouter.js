@@ -7,4 +7,7 @@ const router = new Router();
 // GET
 router.get(['/', '/login', '/iniciar'], loginController.loggin);
 router.get(['/recovery', '/recuperar'], loginController.recovery);
+
+// PUT
+router.put(['/recovery', '/recuperar'], loginController.recoveryPut);
 export default router;
