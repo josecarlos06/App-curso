@@ -17,4 +17,8 @@ const about = (req, res) => {
   };
   res.render('home/about', viewModel);
 };
-export default { home, about };
+
+const profile = (req, res) => {
+  res.send('Visa de perfil del usuario');
+};
+export default { home, about, profile };
