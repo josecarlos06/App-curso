@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{title}}</title>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ejemplo de nueva página para GOB.mx</title>
+    <!-- CSS -->
+    <link href="https://framework-gb.cdn.gob.mx/assets/styles/main.css" rel="stylesheet">
     <link rel='stylesheet' href='/stylesheets/app.css'/>
     <link rel="shortcut icon" href="/images/rayos.png" type="image/x-icon">
-</head>
-<body>
-  <nav class="light-blue darken-4">
+  </head>
+  <body>
+  <nav class="navmenu">
      {{>_navbar}}
   </nav>
 
-  <main class="container">
+  <main class="main__contenedor">
     {{{body}}}
   </main>
 
   <footer class="page-footer light-blue darken-4">
     {{>_footer}}
   </footer>
-
-  <script src="/bundle.js"></script>
-</body>
+    <!-- JS -->
+    <script src="https://framework-gb.cdn.gob.mx/gobmx.js"></script>
+    <script src="/bundle.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>

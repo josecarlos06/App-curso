@@ -1,7 +1,6 @@
 // Cargado estilos
 import './stylesheet/style.css';
-import 'materialize-css/dist/css/materialize.css';
-import 'materialize-css/dist/js/materialize';
-
+import 'material-icons/iconfont/material-icons.css';
+// import 'materialize-css/dist/css/materialize.css';
+// import 'materialize-css/dist/js/materialize';
 M.AutoInit();
-console.log('Xd');
