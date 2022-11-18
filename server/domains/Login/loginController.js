@@ -1,6 +1,7 @@
 const loggin = (req, res) => {
   const viewModel = {
     title: 'Loggin',
+    layout: 'log',
   };
   res.render('Login/index', viewModel);
 };
