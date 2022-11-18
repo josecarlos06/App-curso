@@ -7,5 +7,6 @@ const router = new Router();
 router.get(['/', '/home', '/index', '/Dasboard'], homeController.home);
 router.get(['/about'], homeController.about);
 router.get(['/profile', '/perfil'], homeController.profile);
+router.get('/cursos', homeController.cursos);
 
 export default router;
