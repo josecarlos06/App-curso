@@ -33,6 +33,12 @@ h1,h2,h3,p,ul,li,a{
 .owl__item{
   height:30rem;
 }
+.owl-carousel{
+  position: relative;
+}
+.owl-dots{
+  position: absolute;
+}
 @media(min-width:768px){
   .owl__item{
     height:40rem;
