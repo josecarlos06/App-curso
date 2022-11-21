@@ -1,7 +1,7 @@
 // Biblioteca de 3ros para manejar errores http
 // ES5: var createError = require('http-errors');
 // ES6 👇
-import createError from 'http-errors';
+// import createError from 'http-errors';
 // El framework express
 import express from 'express';
 // Biblioteca del nucleo de node que sirve para
@@ -82,11 +82,17 @@ app.use(express.static(path.join(__dirname, '..', 'public')));
 router.addRoutes(app);
 
 // catch 404 and forward to error handler
-app.use((req, res, next) => {
+app.use((req, res) => {
   logger.error(
     `404 - Page Not Found - ${req.originalUrl} - Method: ${req.method}`
   );
-  next(createError(404));
+  const errormodel = {
+    title: 'error 404',
+    orig: req.originalUrl,
+    met: req.method,
+  };
+  res.render('error', errormodel);
+  // next(createError(404));
 });
 
 // error handler

@@ -1,13 +1,22 @@
 const index = (req, res) => {
-  res.send('index-Cursos Working!');
+  const viewModel = {
+    title: 'CMS index',
+  };
+  res.render('CMS/index', viewModel);
 };
 
 const createCurso = (req, res) => {
-  res.send('vista creaciom de usuario listo');
+  const viewModel = {
+    title: 'New Curso',
+  };
+  res.render('CMS/new', viewModel);
 };
 
 const editCurso = (req, res) => {
-  res.send('vista editanto curso.!');
+  const viewModel = {
+    title: 'Edit Curso',
+  };
+  res.render('CMS/edit', viewModel);
 };
 
 const subirCurso = (req, res) => {

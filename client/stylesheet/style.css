@@ -145,6 +145,14 @@ h1,h2,h3,p,ul,li,a{
   background:rgb(0 0 0/.50);
   transform: translateX(0%);
 }
+<<<<<<< HEAD
+=======
+
+
+.logo_footer{
+  height: auto;
+}
+>>>>>>> view-entities
 @media(max-width:768px){
   .field{
     width:100%;

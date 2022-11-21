@@ -1,9 +1,16 @@
 const loggin = (req, res) => {
-  res.send('login its worked!');
+  const viewModel = {
+    title: 'Loggin',
+    layout: 'log',
+  };
+  res.render('Login/index', viewModel);
 };
 
 const recovery = (req, res) => {
-  res.send('recovery acount its working!');
+  const viewModel = {
+    title: 'recovery',
+  };
+  res.render('Login/recovery', viewModel);
 };
 
 const recoveryPut = (req, res) => {

@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import cursosController from './cursosController';
+import cursosController from './cmsController';
 // crear instancia
 const router = new Router();
 

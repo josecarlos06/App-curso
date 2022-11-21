@@ -19,6 +19,17 @@ const about = (req, res) => {
 };
 
 const profile = (req, res) => {
-  res.send('Visa de perfil del usuario');
+  const viewModel = {
+    title: 'profile page',
+  };
+  res.render('home/profile', viewModel);
 };
-export default { home, about, profile };
+
+const cursos = (req, res) => {
+  const viewModel = {
+    title: 'page list cursos',
+  };
+  res.render('home/cursos', viewModel);
+};
+
+export default { home, about, profile, cursos };
