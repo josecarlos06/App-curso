@@ -1,7 +1,3 @@
-// Biblioteca de 3ros para manejar errores http
-// ES5: var createError = require('http-errors');
-// ES6 👇
-// import createError from 'http-errors';
 // El framework express
 import express from 'express';
 // Biblioteca del nucleo de node que sirve para
@@ -27,9 +23,11 @@ import debug from './services/debugLogger';
 import router from './routes/router';
 import configHbs from './config/templeteEngine';
 
-// Recuperar el modo de ejecución de la app
-const nodeEnv = process.env.NODE_ENV || 'development';
+import configKeys from './config/configKeys';
+import MongooseOdm from './config/odm';
 
+const nodeEnv = configKeys.env;
+// Recuperar el modo de ejecución de la app
 // Creando una instancia de express
 const app = express();
 logger.info('esto es express');
@@ -61,7 +59,19 @@ if (nodeEnv === 'development') {
 } else {
   debug('✒ Ejecutando en modo de producción 🏭');
 }
+const mongooseODM = new MongooseOdm(configKeys.mongoUrl);
 
+(async () => {
+  // Ejecutamos le metodo de conexion
+  const connectionResult = await mongooseODM.connect();
+  // Checamos si hay error
+  if (connectionResult) {
+    // Si conecto correctamente a la base de datos
+    logger.info('Conexion a la BD exitosa 😈');
+  } else {
+    logger.error('error de conexion😢');
+  }
+})();
 // view engine setup
 // Configura el motor de plantillas
 // 1. Establecer donde estarán las plantillas
