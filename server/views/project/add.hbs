@@ -1,1 +1,17 @@
-<h1>Agregar Proyecto</h1>
+<header class="header__home">
+   <h2 class="heading text-center">formulario</h2>
+</header>
+
+<form autocomplete="off" action="/project/add" method="POST" class="form">
+   <div class="fields">
+      <label for="project-name" class="field__label">Nombre del proyecto</label>
+      <input type="text" name="name" id="project-name" class="field__input" placeholder="Nombre del proyecto 😈">
+   </div>
+   <div class="fields">
+      <label for="description" class="field__label">Nombre del proyecto</label>
+      <textarea name="description" id="description" class="field__input"></textarea>
+   </div>
+   <div class="fiedls--action">
+      <button type="submit" class="bton__search">Enviar</button>
+   </div>
+</form>
