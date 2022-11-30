@@ -100,6 +100,7 @@ app.use((req, res) => {
     title: 'error 404',
     orig: req.originalUrl,
     met: req.method,
+    layout: 'error404',
   };
   res.render('error', errormodel);
   // next(createError(404));
