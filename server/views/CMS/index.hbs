@@ -1,1 +1,110 @@
-<h2>{{title}}</h2>
+<nav class='navbar navbar-default' style='background-color:#BC955C'>
+  <div class='container-fluid'>
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class='navbar-header'>
+      <button
+        type='button'
+        class='navbar-toggle collapsed'
+        data-toggle='collapse'
+        data-target='#bs-example-navbar-collapse-1'
+        aria-expanded='false'
+      >
+        <span class='sr-only'>Toggle navigation</span>
+        <span class='icon-bar'></span>
+        <span class='icon-bar'></span>
+        <span class='icon-bar'></span>
+      </button>
+      <a class='navbar-brand' href='#'>HOME </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
+      <ul class='nav navbar-nav'>
+
+        <li class='dropdown'>
+          <a
+            href='#'
+            class='dropdown-toggle'
+            data-toggle='dropdown'
+            role='button'
+            aria-haspopup='true'
+            aria-expanded='false'
+          >ORDENAR COMO <span class='caret'></span></a>
+          <ul class='dropdown-menu'>
+            <li><a href='#'>Fecha</a></li>
+            <li><a href='#'>Recien Agregado</a></li>
+            <li><a href='#'>A-Z</a></li>
+            <li><a href='#'>Z-A</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class='navbar-form navbar-left' role='search'>
+        <div class='form-group'>
+          <input type='text' class='form-control' placeholder='Buscar' />
+        </div>
+        <button
+          type='submit'
+          class='btn'
+          style='background: #014a82;
+}'
+        >Buscar</button>
+      </form>
+      <button
+      href="/admin/profile.hbs"
+        type='button'
+        class='btn btn-default navbar-right'
+        aria-label='Left Align'
+      >
+        <span class='glyphicon glyphicon-plus' aria-hidden='true'></span>
+      </button>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombre del Curso</th>
+      <th scope="col">Autor</th>
+      <th scope="col">Estatus</th>
+      <th scope="col">Fecha-Creacion</th>
+      <th scope="col">Duracion</th>
+      <th scope="col">Caracteristicas</th>
+      <th scope="col">Cupo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Data Driven mindset: Toma decisiones con data</td>
+      <td>El pepe</td>
+      <td>Activo</td>
+      <td>20/20/2022</td>
+      <td>19hrs</td>
+      <td>OFERTA educativa</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+     <td>Data Driven mindset: Toma decisiones con data</td>
+      <td>Con pepe</td>
+      <td>Activo</td>
+      <td>21/20/2022</td>
+      <td>13hrs</td>
+      <td>OFERTA educativa</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Data Driven mindset: Toma decisiones con data</td>
+      <td>Por pepe</td>
+      <td>Activo</td>
+      <td>22/20/2022</td>
+      <td>15hrs</td>
+      <td>OFERTA educativa</td>
+      <td>20</td>
+    </tr>
+  </tbody>
+</table>

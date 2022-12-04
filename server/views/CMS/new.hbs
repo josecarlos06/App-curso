@@ -1,1 +1,49 @@
-<h2>{{title}}</h2>
+
+
+<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+    <span class="sr-only">60% Complete</span>
+  </div>
+</div>
+
+<header class="navbar"></header>
+
+<form autocomplete='off' action='/project/add' method='POST' class='form'>
+<div>
+</div>
+ <div class="fields">
+      <label for="project-name" class="field__label">Nombre del Autor</label>
+      <input type="text" name="name" id="project-name" class="field__input" placeholder="Nombre del autor">
+   </div>
+   <div class="fields">
+      <label for="project-name" class="field__label">Estatus</label>
+      <div class="checkbox">
+  <label>
+    <input type="checkbox" id="blankCheckbox" value="option1" aria-label="Activo">Activo
+  </label>
+</div>
+<div class="checkbox">
+  <label>
+    <input type="checkbox" id="blankCheckbox" value="option1" aria-label="Inactivo">Inactivo
+  </label>
+</div>
+   </div>
+    <div class="fields">
+      <label for="project-name" class="field__label">Nombre del Curso</label>
+      <input type="text" name="name" id="project-name" class="field__input" placeholder="Nombre del Curso">
+   </div>
+   <div class="fields">
+      <label for="description" class="field__label">Descipcion</label>
+      <textarea name="description" id="description" class="field__input"></textarea>
+   </div>
+
+
+<div class="fields">
+      <label for="project-name" class="field__label">Fecha</label>
+      <input type="text" name="name" id="project-name" class="field__input" placeholder="Fecha">
+       <span class="glyphicon glyphicon-calendar"></span> 
+   </div>
+
+  <button type='submit' class='bton__search'>Guardar</button>
+
+</form>
