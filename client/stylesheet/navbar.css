@@ -60,5 +60,7 @@
    .nav__toggle{
      display: none;
    }
-  
+   .padding-top{
+    padding-top: 15px;
+   }
  }
