@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ejemplo de nueva página para GOB.mx</title>
-    <!-- CSS -->
-   
-  </head>
-  <body>
- 
+    <head>
+        <link rel="shortcut icon" href="/tecnm.ico" type="image/x-icon">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Formación Continua</title>
+    </head>
+    <body>
+<!-- CSS -->
     <style>
 body{
     margin: 0;
     padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: linear-gradient(100deg, #020024 0%, #090979 35%, #00d4ff 100%);
+    font-family:var(--fuente);
+    background: rgb(29,28,64);
+    background: linear-gradient(302deg, rgba(29,28,64,1) 0%, rgba(1,87,155,1) 100%);
     height: 100vh;
     overflow: hidden;
 }
@@ -30,11 +30,11 @@ body{
 }
 .center h1{
     font-size: 1.9rem;
-    color:#090979;
+    color:rgb(34, 56, 103);;
     text-align: center;
     text-transform: uppercase;
     padding: 0 0 20px 0;
-    border-bottom: 0.7px solid #090979;
+    border-bottom: 0.7px solid #01579b;
 }
 .center form{
     padding: 0 40px;
@@ -71,12 +71,12 @@ form .txtField{
     left: 0;
     width: 100%;
     height: 2px;
-    background: #090979
+    background: #01579b
 }
 .txtField input:focus ~label,
 .txtField input:valid ~label{
     top: -5px;
-    color: #090979;
+    color: #01579b;
 }
 .txtField input:focus ~span::before,
 .txtField input:valid ~span::before{
@@ -88,7 +88,7 @@ form .txtField{
     width: 20rem;
     height: 2.3rem;
     border: 2px solid;
-    background: #090979;
+    background: #01579b;
     border-radius: 1.3rem;
     font-size: 1.6rem;
     color: #e9f4fb;
@@ -98,8 +98,9 @@ form .txtField{
     margin-bottom: 10px;
 }
 .ingresar:hover{
-    border: 2.5px solid #090979;
-    transition: 1s;
+    box-shadow: rgb(84, 170, 246) -2px -2px 0px 2px, rgb(0, 123, 255) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+    transform: scale(1.01);
+
 }
 .logo_v{
     width: 180px;
@@ -108,24 +109,31 @@ form .txtField{
     border-radius: 2rem;
 }
 .ingresar{
-    text-align: center;
+    display: inline-block;
+    margin: 0 20%;
+    outline: 0;
+    border:0;   
+    cursor: pointer;
     text-decoration: none;
-    color: #e9f4fb;
-    font-size: 1.7rem;
-    margin: 3.1rem;
-    padding: 0.5rem 4rem;
-    border-radius: 2rem;
-    background: #090979;
-    border: 2px solid;
+    position: relative;
+    color: #01579b;
+    background: rgb(241, 241, 241);
+    line-height: 30px;
+    border-radius: 20px;
+    padding: 15px 60px;
+    font-size: 30px;
+    font-weight: 500;
+    box-shadow: rgb(0, 123, 255) -2px -2px 0px 2px, rgb(84, 170, 246) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+    transition: all 0.5s;
 }
 
 
     </style>
 
-  <main class="main__contenedor">
+    <main class="main__contenedor">
     {{{body}}}
-  </main>
+    </main>
 
 
-  </body>
+    </body>
 </html>
