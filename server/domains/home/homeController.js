@@ -1,6 +1,7 @@
 // creando los Actions methods
 // get "/"
 // get "/index"
+import ProjectModel from './../CMS/projectModel';
 import configKeys from '../../config/configKeys';
 
 const home = (req, res) => {
@@ -25,11 +26,9 @@ const profile = (req, res) => {
   res.render('home/profile', viewModel);
 };
 
-const cursos = (req, res) => {
-  const viewModel = {
-    title: 'page list cursos',
-  };
-  res.render('home/cursos', viewModel);
+const cursos = async (req, res) => {
+  const projects = await ProjectModel.find().lean().exec();
+  res.render('home/cursos', { projects });
 };
 
 export default { home, about, profile, cursos };

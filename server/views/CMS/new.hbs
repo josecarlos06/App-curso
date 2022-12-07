@@ -1,44 +1,47 @@
+<section class="container">
+  <form autocomplete='off' action='/CMS/new' method='POST' class="course__form">
+    <div class="campo">
+      <label class="couse__label" for="course">Nombre de curso</label>
+      <input type="text" name="course" value="{{project.course}}" oninvalid="this.setCustomValidity('Agrega un curso')" required>
+      
+      {{#if errorModel.courseError}}
+              <span class="spanError">{{errorModel.courseError}}</span>
+      {{/if}}
+    </div>
+    <div class="campo">
+      <label class="couse__label" for="teacher">Nombre de teacher</label>
+      <input type="text" name="teacher" value="{{project.teacher}}" oninvalid="this.setCustomValidity('Agrega un nombre')" required>
+      {{#if errorModel.teacherError}}
+              <span class="spanError">{{errorModel.teacherError}}</span>
+      {{/if}}
+    </div>
+    <div class="campo campo-modi">
+      <div class="campo-price">
+        <label class="couse__label" for="price">Precio</label>
+        <input type="text" name="price" value="{{project.price}}" oninvalid="this.setCustomValidity('Agrega un precio')" required>
+        {{#if errorModel.priceError}}
+                <span class="spanError">{{errorModel.priceError}}</span>
+        {{/if}}
+      </div>
+      <div class="campo-price">
+        <label class="couse__label" for="price">Precio con descuento</label>
+        <input type="text" name="priceOff" value="{{project.priceOff}}" oninvalid="this.setCustomValidity('Agrega un precio con descuento')" required>
+        
+        {{#if errorModel.priceOffError}}
+                <span class="spanError">{{errorModel.priceOffError}}</span>
+        {{/if}}
+      </div>
+    </div>
+    <div class="campo">
+      <label class="couse__label" for="igm">Url img</label>
+      <input type="text" name="img" value="{{project.img}}" oninvalid="this.setCustomValidity('Agrega una url')" required>
+      {{#if errorModel.imgError}}
+              <span class="spanError">{{errorModel.imgError}}</span>
+      {{/if}}
+    </div>
+    <div class="campo__submit">
+      <input type="submit" value="enviar" class="bton__search bton__search">
+    </div>
+  </form>
 
-
-
-<header class="navbar"></header>
-
-<form autocomplete='off' action='/project/add' method='POST' class='form'>
-<div>
-</div>
- <div class="fields">
-      <label for="project-name" class="field__label">Nombre del Autor</label>
-      <input type="text" name="name" id="project-name" class="field__input" placeholder="Nombre del autor">
-   </div>
-   <div class="fields">
-      <label for="project-name" class="field__label">Estatus</label>
-      <div class="checkbox">
-  <label>
-    <input type="checkbox" id="blankCheckbox" value="option1" aria-label="Activo">Activo
-  </label>
-</div>
-<div class="checkbox">
-  <label>
-    <input type="checkbox" id="blankCheckbox" value="option1" aria-label="Inactivo">Inactivo
-  </label>
-</div>
-   </div>
-    <div class="fields">
-      <label for="project-name" class="field__label">Nombre del Curso</label>
-      <input type="text" name="name" id="project-name" class="field__input" placeholder="Nombre del Curso">
-   </div>
-   <div class="fields">
-      <label for="description" class="field__label">Descipcion</label>
-      <textarea name="description" id="description" class="field__input"></textarea>
-   </div>
-
-
-<div class="fields">
-      <label for="project-name" class="field__label">Fecha</label>
-      <input type="text" name="name" id="project-name" class="field__input" placeholder="Fecha">
-       <span class="glyphicon glyphicon-calendar"></span> 
-   </div>
-
-  <button type='submit' class='bton__search'>Guardar</button>
-
-</form>
+</section>

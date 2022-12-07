@@ -9,45 +9,16 @@
    </article>
 
    <div class="grid__cursos">
-
+   {{#each projects}}
       <div class="item__curso">
          <figure class="curso__image">
-            <img src="https://crehana-public-catalog.imgix.net/images/courses/promo-images/35a28483/42202631.jpg?auto=format&q=55&w=322&h=219&fit=crop" alt="" class="curso__img">
+            <img src="{{img}}" alt="" class="curso__img">
          </figure>
-         <h3 class="title">Data Driven mindset: Toma decisiones con data</h3>
-         <p class="paragraph">Por el pepe</p>
-         <p class="price">MXM$230 <span class="price--span">MXM$450</span></p>
+         <h3 class="title">{{course}}</h3>
+         <p class="paragraph">{{teacher}}</p>
+         <p class="price">MXM${{priceOff}} <span class="price--span">MXM${{price}}</span></p>
          <a href="#" class="botn">Obtenga acceso completo</a>
       </div>
-
-      <div class="item__curso">
-         <figure class="curso__image">
-            <img src="https://crehana-public-catalog.imgix.net/images/courses/promo-images/0df7f3d8/d8ad386b.jpeg?auto=format&q=55&w=322&h=219&fit=crop" alt="" class="curso__img">
-         </figure>
-         <h3 class="title">Data Driven mindset: Toma decisiones con data</h3>
-         <p class="paragraph">Por el pepe</p>
-         <p class="price">MXM$230 <span class="price--span">MXM$450</span></p>
-         <a href="#" class="botn">Obtenga acceso completo</a>
-      </div>
-
-      <div class="item__curso">
-         <figure class="curso__image">
-            <img src="https://crehana-public-catalog.imgix.net/images/courses/promo-images/ed4aa26c/e0f71e2b.jpeg?auto=format&w=322&h=219&fit=crop&dpr=2" alt="" class="curso__img">
-         </figure>
-         <h3 class="title">Data Driven mindset: Toma decisiones con data</h3>
-         <p class="paragraph">Por el pepe</p>
-         <p class="price">MXM$230 <span class="price--span">MXM$450</span></p>
-         <a href="#" class="botn">Obtenga acceso completo</a>
-      </div>
-
-      <div class="item__curso">
-         <figure class="curso__image">
-            <img src="https://crehana-public-catalog.imgix.net/images/courses/promo-images/030aa760/8eef3c05.jpeg?auto=format&w=322&h=219&fit=crop&dpr=2" alt="" class="curso__img">
-         </figure>
-         <h3 class="title">Data Driven mindset: Toma decisiones con data</h3>
-         <p class="paragraph">Por el pepe</p>
-         <p class="price">MXM$230 <span class="price--span">MXM$450</span></p>
-         <a href="#" class="botn">Obtenga acceso completo</a>
-      </div>
+   {{/each}}
    </div>
 </section>

@@ -181,6 +181,7 @@ h1,h2,h3,p,ul,li,a{
 .curso__image{
   border-radius:.25rem;
   overflow: hidden;
+  height:20rem;
 }
 .title{
   font-size:2rem;
@@ -261,7 +262,39 @@ h1,h2,h3,p,ul,li,a{
   align-items: flex-start;
   width: 80%;
 }
+.course__form{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:2rem;
+  margin-top:2rem
+}
+.course__form .campo{
+  width:60%;
+}
+.campo-modi{
+  display: flex;
+  gap:2rem;
+}
 
+.campo-price{
+  width:100%;
+}
+.course__form .campo input{
+  width:100%;
+  padding:.8rem .5rem;
+}
+.campo__submit{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width:60%;
+}
+.bton__search{
+  display: inline-block;
+  width:30%;
+}
   @media(max-width:768px){
   .field{
     width:100%;
@@ -270,6 +303,23 @@ h1,h2,h3,p,ul,li,a{
     grid-template-columns:repeat(1,1fr);
     grid-template-rows:repeat(1,1fr);
   }
+}
+@media(max-width:768px){
+  .campo-modi{
+    display: flex;
+    flex-direction: column;
+  }
+  .course__form .campo{
+    width:100%;
+  }
+  
+.campo__submit{
+  width:100%;
+}
+.bton__search{
+
+  width:100%;
+}
 }
 @media(min-width:768px){
   .grid{

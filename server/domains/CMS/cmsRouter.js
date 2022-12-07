@@ -1,5 +1,9 @@
 import { Router } from 'express';
 import cursosController from './cmsController';
+
+import ValidateFactory from '../../services/validateFactory';
+// Importando objeto validador
+import projectValidator from './projectValidator';
 // crear instancia
 const router = new Router();
 
@@ -7,10 +11,19 @@ const router = new Router();
 // GET
 router.get(['/', '/Dashboard'], cursosController.index);
 router.get(['/edit', 'editar'], cursosController.editCurso);
-router.get(['/new', '/nuevo'], cursosController.createCurso);
-
 // POST
-router.post(['/new', '/nuevo'], cursosController.subirCurso);
+
+
+router.get(['/new', '/nueva'], cursosController.createCurso);
+
+router.post(
+   ['/new', '/nuevo'],
+   ValidateFactory({
+     schema: projectValidator.projectSchema,
+     getObject: projectValidator.getProject,
+   }),
+   cursosController.addProject
+ );
 // DELETE
 router.delete('/:id', cursosController.eliminandoCurso);
 export default router;
