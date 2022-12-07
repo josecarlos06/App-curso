@@ -291,7 +291,7 @@ h1,h2,h3,p,ul,li,a{
   align-items: flex-start;
   width:60%;
 }
-.bton__search{
+.bton__submit{
   display: inline-block;
   width:30%;
 }
@@ -316,7 +316,7 @@ h1,h2,h3,p,ul,li,a{
 .campo__submit{
   width:100%;
 }
-.bton__search{
+.bton__submit{
 
   width:100%;
 }

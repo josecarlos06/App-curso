@@ -39,7 +39,11 @@
   color:var(--blanco);
   text-decoration: none;
 }
-
+.nav__link:hover{
+  color: var(--blanco);
+  opacity: .8;
+  text-decoration: none;
+}
 .nav__toggle{
   display:flex;
   cursor: pointer;
